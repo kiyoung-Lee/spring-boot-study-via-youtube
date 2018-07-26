@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.day06.MyListener;
 import javafx.application.Application;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
@@ -22,9 +23,13 @@ public class DemoApplication {
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+//		SpringApplication.run(DemoApplication.class, args);
 
-		SpringApplication application = new SpringApplication(Application.class);
+		SpringApplication application = new SpringApplication(DemoApplication.class);
+		application.addListeners(new MyListener());
+		application.run(args);
+
+
 //		application.setWebApplicationType(WebApplicationType.REACTIVE);
 //		application.setApplicationContextClass();
 
