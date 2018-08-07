@@ -1,0 +1,31 @@
+whiteship:
+  name: kiyoung
+
+---
+spring:
+  profiles: default
+whiteship:
+  name: kiyoun default
+  list:
+    - name: my name
+      desc: my desc
+    - name: another name
+      desc: anothre desc
+---
+spring:
+  profiles: prod
+whiteship:
+  name: kiyoun prod
+  list:
+    - name: my name
+      desc: my desc
+    - name: another name
+      desc: anothre desc
+    - name: another name
+      desc: anothre desc
+---
+spring:
+  profiles: dev
+whiteship:
+  name: kiyoun dev
+---
