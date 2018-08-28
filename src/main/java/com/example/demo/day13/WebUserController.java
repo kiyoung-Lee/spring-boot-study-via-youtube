@@ -1,10 +1,11 @@
 package com.example.demo.day13;
 
+import com.example.demo.day14.TestUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,5 +26,13 @@ public class WebUserController {
         return "main";
     }
 
+    @GetMapping("/getuser")
+    public TestUser currentUser(){
+        TestUser user  = new TestUser();
+        user.setName("test");
+        user.setAge(12);
+
+        return user;
+    }
 
 }
