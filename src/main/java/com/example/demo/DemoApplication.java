@@ -1,18 +1,10 @@
 package com.example.demo;
 
-import com.example.demo.day06.MyListener;
-import com.example.demo.day09.SampleProperties;
-import com.example.demo.day17.VideoConverter;
-import javafx.application.Application;
+import com.example.demo.youtube.day06.MyListener;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.core.convert.support.ConfigurableConversionService;
-import org.springframework.format.support.FormattingConversionService;
-import org.springframework.web.bind.support.ConfigurableWebBindingInitializer;
 
 @SpringBootApplication
 

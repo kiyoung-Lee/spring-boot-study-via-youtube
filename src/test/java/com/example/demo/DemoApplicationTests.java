@@ -1,7 +1,7 @@
 package com.example.demo;
 
-import com.example.demo.day03.UserService;
-import com.example.demo.day04.AdminService;
+import com.example.demo.youtube.day03.UserService;
+import com.example.demo.youtube.day04.AdminService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
