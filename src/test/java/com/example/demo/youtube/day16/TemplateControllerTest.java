@@ -9,11 +9,11 @@ public class TemplateControllerTest {
     @Test
     public void ModelTest() throws Exception {
 
-        TemplateController controller = new TemplateController();
-        Model model = new ExtendedModelMap();
-
-        controller.getTemplate(model, "kiyoung");
-
-        model.asMap().forEach((k, v) -> System.out.println("key: " + k + "value: " + v));
+//        com.example.demo.youtube.day16.TemplateController controller = new com.example.demo.youtube.day16.TemplateController();
+//        Model model = new ExtendedModelMap();
+//
+//        controller.getTemplate(model, "kiyoung");
+//
+//        model.asMap().forEach((k, v) -> System.out.println("key: " + k + "value: " + v));
     }
 }

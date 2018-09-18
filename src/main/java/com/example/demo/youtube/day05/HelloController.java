@@ -11,8 +11,10 @@ public class HelloController {
     HelloService helloService;
 
 
+
     @RequestMapping("/hello")
     String showMessage(){
+        helloService.getMessage();
         return helloService.getMessage();
     }
 }
